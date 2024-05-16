@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  .container {
+    background-image: url(https://wallpapercave.com/wp/wp4893889.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+  
+  }
+  .boards {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    padding: 100px;
+    
+  }
+  .card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(#d500f9 , #87C4FF);
+    flex: 1;
+    height: fit-content;
+    border-radius: 10px;
+    gap: 10px;
+    overflow: hidden;
+  }
+ 
+  .header {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+  }
+  .header p {
+    font-size: 20px;
+  }
+  .listconatiner {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+    display: block;
+    height: 110px;
+  }
+  #addbutton {
+   border-radius: 10px;
+   border: 0;
+   padding: 20px;
+   background-color: transparent;
+   width: 100%;
+   font-weight: bold;
+   font-size: 16px;
+  }
+  .list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    background-color:transparent;
+    border: 1px solid #CAEDFf;
+    border-radius: 10px;
+    width: 100%;
+    height:fit-content ;
+  }
+  .drag{
+    height: fit-content;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    z-index: 2;
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .details {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .check {
+    border: 0.1px solid #CAEDFf;
+    border-radius: 50%;
+    background-color: transparent;
+    height: 24px;
+    width: 24px;
+  }
+  .remove {
+    border: 0.1px solid #CAEDFf;
+    border-radius: 50%;
+    background-color: transparent;
+    height: 24px;
+    width: 24px;
+  }
+  .edit {
+    border: 0.1px solid #CAEDFf;
+    border-radius: 50%;
+    background-color: transparent;
+    height: 24px;
+    width: 24px;
+  }
+  .button{
+    background-color:#CAEDFf;
+    border: 0;
+    border-radius: 10px;
+    width: 140px;
+    height: 30px;
+  }
+  .check:hover {
+    background-color: #CAEDFf;
+    cursor: pointer;
+  }
+  .remove:hover {
+    background-color: #CAEDFf;
+    cursor: pointer;
+  }
+  .edit:hover {
+    background-color: #CAEDFf;
+    cursor: pointer;
+  }
+  #addbutton:hover {
+    border: 2px solid #CAEDFf;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .modal {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 400px;
+    background-color: #CAEDFf;
+    top: 20%;
+    right: 35%;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .fieldcontainer {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000080;
+    display: none;
+    
+  }
+  
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
+  }
+  
+  .form {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+  }
+  .status {
+    display: flex;
+    flex-direction: column;
+  }
+  .priority {
+    display: flex;
+    flex-direction: column;
+  }
+  .endbutton {
+    width: 368px;
+    height: 40px;
+    background-color: #87C4FF;
+    border: 0;
+    padding-bottom: 10px;
+    text-align: center;
+    color: black;
+    border-radius: 10px;
+    font-size: 15px;
+  }
+  
